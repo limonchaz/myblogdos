@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/hola_mundo/</loc>
+    <loc>https://limonchaz.github.io/myblogdos/post/hola_mundo/</loc>
     <lastmod>2018-02-07T10:33:56-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://limonchaz.github.io/myblogdos/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2018-02-07T10:33:56-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/post/</loc>
+    <loc>https://limonchaz.github.io/myblogdos/</loc>
     <lastmod>2018-02-07T10:33:56-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://limonchaz.github.io/myblogdos/post/</loc>
+    <lastmod>2018-02-07T10:33:56-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://limonchaz.github.io/myblogdos/tags/</loc>
     <priority>0</priority>
   </url>
   
