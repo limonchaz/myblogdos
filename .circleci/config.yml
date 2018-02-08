@@ -23,7 +23,7 @@ jobs:
             - run:
                 name: Push to git
                 command: |
-                    git config --global user.email "diego@dsindigo.com"
+                    git config --global user.email "citrix.ko@gmail.com"
                     git config --global user.name "CircleCI"
                     git add docs/
                     git commit -m "Release"
