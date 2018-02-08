@@ -12,15 +12,23 @@ jobs:
             - run:
                 name: "Generate Tag"
                 command: |
-                    increment=0.1
+                    increment=1
                     tag=$(git tag | sed '$!d')
                     if [[ -z $tag ]] ; then
-                       git tag -a v1.0 -m 'Version 1.0'
+                    	git tag -a v1.0 -m 'Version 1.0'
                     else
-                       version=$(echo "$tag" | grep -o -E '[0-9.0-9]+')
-                       num=$(echo $version + $increment | bc)
-                       echo "Tag v$num"
-                       git tag -a v$num -m 'Version $num'
+                    	aux=$(echo "$tag" | grep -o -E '[0-9]+')
+                        real=$(echo "$aux" | head -n 1)
+                        decimal=$(echo "$aux" | sed '$!d')
+                    	if [[ $decimal == 9 ]] ; then
+                            num=$(expr $real + $increment)
+                    	    version="v$num.0"
+                    	else 
+                            num=$(expr $decimal + $increment)
+                    	    version="v$real.$num"
+                    	fi
+                    	echo "Tag $version"
+                        git tag -a $version -m 'Version $version'
                     fi
                     git push --tags
         
