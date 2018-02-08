@@ -30,7 +30,7 @@ jobs:
                     	    version="v$real.$num"
                     	fi
                     	echo "Tag $version"
-                        git tag -a $version -m 'Version $version'
+                        git tag -a $version -m 'Tag auto generado en build'
                     fi
                     git push --tags
         
