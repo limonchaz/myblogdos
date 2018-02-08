@@ -12,6 +12,8 @@ jobs:
             - run:
                 name: "Generate Tag"
                 command: |
+                    git config --global user.email "citrix.ko@gmail.com"
+                    git config --global user.name "CircleCI"
                     increment=1
                     tag=$(git tag | sed '$!d')
                     if [[ -z $tag ]] ; then
